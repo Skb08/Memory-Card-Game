@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 body {
@@ -13,22 +14,27 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #7584f6;
-}
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}   
 
 .box {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: crimson;
+    font-size: 1.775em;
+    padding-bottom: 50px;
+    color: #212529;
 }
 
 #inpt {
-    width: 90px;
+    height: 35px;
+    width: 60px;
     border-radius: 4px;
-    background-color: rgb(230, 250, 250);
+    background-color: #212529;
     margin-left: 10px;
-    color: #e304e7;
+    color: rgb(244, 212, 212);
+    border: 4px solid rgb(0, 0, 0);
+    font-size: large;
     font-weight: bold;
     padding-left: 30px;
 }
@@ -37,7 +43,8 @@ body {
     height: 400px;
     width: 400px;
     padding: 25px;
-    background: #f9e1e1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: linear-gradient(to bottom, #0099ff 0%, #ff66ff 100%);
     border-radius: 8px;
 }
 
@@ -68,6 +75,10 @@ body {
 
 .card.shake {
     animation: shake 0.35s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.15);
 }
 
 @keyframes shake {
